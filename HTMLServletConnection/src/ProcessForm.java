@@ -30,8 +30,8 @@ public class ProcessForm extends HttpServlet {
 		// TODO Auto-generated method stub
 		String f_name = request.getParameter("firstname");
 		String l_name = request.getParameter("lastname");
-		
-		String message = "My name is "+f_name+" "+l_name;
+		String car = request.getParameter("car");
+		String message = "My name is "+f_name+" "+l_name+" And my car is " +car;
 		
 	      request.setAttribute("message", message);
 	      getServletContext()
